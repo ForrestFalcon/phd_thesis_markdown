@@ -15,5 +15,4 @@ TexHack: Überschrift und richtige Seitenzahl werden durch die obige Überschrif
 
 \pagenumbering{roman}
 \setcounter{page}{3}
-
 \newpage
