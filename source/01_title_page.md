@@ -44,7 +44,7 @@
 
         \Large
         \titel
-        
+
         \normalsize
         \titelEN
 
@@ -59,14 +59,14 @@
 
         \normalsize
         Prüfer:\\
-        \pTitle\space\pVorname\space\pNachname,\space\pInstitution
+        \pTitle\space\pVorname\space\pNachname,\space \pInstitution
 
         % Firmenlogo
         % \includegraphics[width=0.4\textwidth]{style/firmenlogo.png}
 
         \normalsize
         Betreuer:\\
-        \bTitle\space\bVorname\space\bNachname,\space\bInstitution
+        \bTitle\space\bVorname\space\bNachname,\space \bInstitution
 
         % Abgabedatum
         \datum

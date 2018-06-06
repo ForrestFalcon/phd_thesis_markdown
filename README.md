@@ -68,6 +68,7 @@ Es gibt ein paar kleine Probleme:
     ```
 
 5. Bearbeite die Dateien im Ordner 'source' und gehe dann wieder zu Schritt 4.
+<<<<<<< HEAD
 
 ## Was sollte ich sonst noch wissen?
 
@@ -88,4 +89,26 @@ Beiträge zum Template sind herzlich willkommen! Es gibt vieles, was verbessert 
 - Aufräumarbeiten in den LaTeX-Vorlagen, die derzeit etwas chaotisch sind.
 - Styleverbesserungen für die Ausgabe im Word- bzw. TeX-Format.
 
+=======
+
+## Was sollte ich sonst noch wissen?
+
+Einige hilfreiche Punkte in zufälliger Reihenfolge:
+
+- Jedes Kapitel muss mit mindestens einer Leerzeile enden, sonst wird die Überschrift des folgenden Kapitels eventuell nicht erfasst.
+- Einen Zeilenumbruch kannst du mit zwei Leerzeichen am Ende der Zeile erzwingen.
+- die Vorlage verwendet Markdown [(Pandoc)](http://pandoc.org/MANUAL.html)
+- PDFs werden mithilfe von LaTeX-Vorlagen aus dem 'style'-Ordner erzeugt. Änderungen nimmst du am besten dort vor.
+- Um den Zitierstil zu ändern, überschreibe einfach `ref_format.csl` mit dem neuen Style. Styledateien bekommst du unter [citationstyles.org/](http://citationstyles.org/)
+- Für Webentwickler gibt es einen Grunt Task (Gruntfile.js), der die Markdowndateien überwachen kann. Mit `$ npm install` und anschließendem `$ npm run watch` wird die PDF immer dann erzeugt, wenn du eine Markdowndatei speicherst.
+
+# Beitragen
+
+Beiträge zum Template sind herzlich willkommen! Es gibt vieles, was verbessert werden kann, z.B.:
+
+- Finde einen Weg, wie die Kurzbeschriftungen von Tabellen im Tabellenverzeichnis landen.
+- Aufräumarbeiten in den LaTeX-Vorlagen, die derzeit etwas chaotisch sind.
+- Styleverbesserungen für die Ausgabe im Word- bzw. TeX-Format.
+
+>>>>>>> master
 Bitte forke und bearbeite das Projekt und schicke anschließend einen Pullrequest. 

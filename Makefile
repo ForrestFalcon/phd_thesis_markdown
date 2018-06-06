@@ -35,11 +35,11 @@ dia:
 	cd ${INPUTDIR}/figures/dia/ && dia -t png *.dia
 
 	
-convert: dia 
+# convert: dia 
 
 
 # for other csl styles look at https://github.com/citation-style-language/styles
-pdf: convert
+pdf: # convert
 	pandoc ${INPUTDIR}/*.md \
 	-o ${OUTPUTDIR}/${DOCNAME}.pdf \
 	-H ${STYLEDIR}/preamble.tex \
@@ -50,11 +50,12 @@ pdf: convert
 	--highlight-style pygments \
 	-V fontsize=12pt \
 	-V papersize=a4paper \
-	-V documentclass:report \
-	-V lang:german \
-	-V mainlang:german \
+	-V documentclass=report \
+	-V lang=german \
+	-V mainlang=german \
 	-N \
-	--latex-engine=xelatex
+	--pdf-engine=xelatex \
+	--verbose
 
 
 tex: convert
@@ -65,9 +66,9 @@ tex: convert
 	--bibliography="${BIBFILE}" \
 	-V fontsize=12pt \
 	-V papersize=a4paper \
-	-V documentclass:report \
-	-V lang:german \
-	-V mainlang:german \
+	-V documentclass=report \
+	-V lang=german \
+	-V mainlang=german \
 	-N \
 	--csl="${STYLEDIR}/ref_format.csl" \
 	--latex-engine=xelatex
